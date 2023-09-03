@@ -45,7 +45,8 @@ class RedactorEditor(widgets.Textarea):
             'admin/js/vendor/jquery/jquery{}.js'.format(_min),
             'admin/js/jquery.init.js',
             'redactor/jquery.redactor.init.js',
-            'redactor/redactor{}.js'.format(_min),
+            #'redactor/redactor{}.js'.format(_min), # что-то пошло не так с собранной версией
+            'redactor/redactor.js',
             'redactor/langs/{}.js'.format(self.options.get('lang', 'en')),
         )
 
